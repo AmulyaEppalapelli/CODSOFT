@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <h2><center>CALCULATOR</center></h2>
+  <style>
+    .calculator {
+      width: 250px;         
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #444247;
+      border: 1px solid #f7f6e8;
+      border-radius: 5px;       
+    }
+
+    table {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    td {
+      text-align: center;           
+      padding: 5px;
+    }
+
+    button {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      background-color: #e7f1ec;
+      border: 1px solid #eadfdf;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #3e7aaa;
+    }
+
+    button:active {
+      background-color: #d6c4c4;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" disabled>
+    <table>
+      <tr>
+        <td><button onclick="appendNumber(7)">7</button></td>
+        <td><button onclick="appendNumber(8)">8</button></td>
+        <td><button onclick="appendNumber(9)">9</button></td>
+        <td><button onclick="appendOperator('+')">+</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="appendNumber(4)">4</button></td>
+        <td><button onclick="appendNumber(5)">5</button></td>
+        <td><button onclick="appendNumber(6)">6</button></td>
+        <td><button onclick="appendOperator('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="appendNumber(1)">1</button></td>
+        <td><button onclick="appendNumber(2)">2</button></td>
+        <td><button onclick="appendNumber(3)">3</button></td>
+        <td><button onclick="appendOperator('*')">*</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="appendNumber(0)">0</button></td>
+        <td><button onclick="appendOperator('.')">.</button></td>
+        <td><button onclick="calculate()">=</button></td>
+        <td><button onclick="appendOperator('/')">/</button></td>
+      </tr>
+    </table>
+    <button onclick="clearDisplay()">AC</button>
+  </div>
+
+  <script>
+    let displayValue = "";
+
+    function appendNumber(number) {
+      displayValue += number;
+      updateDisplay();
+    }
+
+    function appendOperator(operator) {
+      displayValue += operator;
+      updateDisplay();
+    }
+
+    function calculate() {
+      try {
+        const result = eval(displayValue);
+        displayValue = result.toString();
+        updateDisplay();
+      } catch (error) {
+        displayValue = "Error";
+        updateDisplay();
+      }
+    }
+
+    function clearDisplay() {
+      displayValue = "";
+      updateDisplay();
+    }
+
+    function updateDisplay() {
+      document.getElementById("display").value = displayValue;
+    }
+  </script>
+</body>
+</html>
