@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Pizza Landing</title>
+    <style>
+        /* Basic Reset */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styles */
+        .pageHeader {
+            background-color: #3085C3;
+            padding: 20px 0;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .pageHeader h1 {
+            margin-left: 20px;
+        }
+
+        .navLinks {
+            margin-right: 20px;
+        }
+
+        .navLinks a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        /* Main content */
+        .ctaSection {
+            padding: 50px 0;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+
+        .ctaSection h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .ctaSection p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        /* About Us Section */
+        .aboutSection {
+            background-color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .aboutSection h3 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .aboutSection p {
+            font-size: 1.1em;
+        }
+
+        /* Images Row */
+        .imageRow {
+            display: flex;
+            justify-content: space-around;
+            padding: 30px 0;
+        }
+
+        .imageRow img {
+            width: 23%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .pageFooter {
+            background-color: #5CD2E6;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .pageFooter p, .pageFooter a {
+            margin: 5px 0;
+            font-size: 1em;
+        }
+
+        .socialIcons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+        }
+/* ... (rest of the styles) */
+
+.ctaSection {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;  /* Fallback color */
+    background-image: url('https://images.pexels.com/photos/7902939/pexels-photo-7902939.jpeg?auto=compress&cs=tinysrgb&w=600');  /* Replace with your preferred image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+.aboutSection{
+    padding: 50px 0;
+    text-align: center;
+    background-color:#F4E869 ;  /* Fallback color */
+   * Fallback color */
+    
+    color: #fff;
+}
+/* ... (rest of the styles) */
+
+    </style>
+</head>
+
+<body>
+    <!-- Header with Navigation Links -->
+    <header class="pageHeader">
+        <h1>Pizza Delight</h1>
+        <div class="navLinks">
+            <a href="#">Home</a>
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Call to Action Section -->
+        <section class="ctaSection">
+            <h2>Dive into a World of Flavors!</h2>
+            <p>Order now and experience the unmatched taste of our handcrafted pizzas.</p>
+        </section>
+        <section class="aboutSection">
+            <h3>About Us</h3>
+            <p>We are passionate about creating the most delicious pizzas that will leave you craving for more. Our chefs meticulously select the finest ingredients to craft each pizza, ensuring an unforgettable culinary experience.</p>
+        </section>
+
+       
+        <div class="imageRow">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80.png" alt="Pizza 1">
+            <img src="https://images.pexels.com/photos/280453/pexels-photo-280453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.png" alt="Pizza 2">
+            <img src="https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.png" alt="Pizza 3">
+            <img src="https://images.pexels.com/photos/4393426/pexels-photo-4393426.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500.png" alt="Pizza 4">
+           
+                </div>
+                <footer class="pageFooter">
+                    <p>Contact Us: contact@pizzadelight.com | +123 456 7890</p>
+                    <div class="socialIcons">
+                        <a href="#">Facebook</a> | 
+                        <a href="#">Twitter</a> | 
+                        <a href="#">Instagram</a>
+                <p>&copy; 2023 Pizza Delight. All Rights Reserved.</p>
+            </footer>
+    </main>
+</body>
+
+</html>
